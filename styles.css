@@ -72,8 +72,8 @@ body {
 }
 
 .header3 {
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
     color: gray;
     text-align: center;
     font-family: Andalé-Mono, monospace;

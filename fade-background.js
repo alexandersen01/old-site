@@ -8,12 +8,3 @@ window.addEventListener('scroll', () => {
 
 const header3 = document.querySelector('.header3');
 
-window.addEventListener('scroll', function() {
-    var header3 = document.querySelector('.header3');
-    var position = header3.getBoundingClientRect();
-  
-    // If header3 is in the viewport
-    if(position.top >= 0 && position.bottom <= window.innerHeight) {
-      header3.classList.add('visible');
-    }
-  });

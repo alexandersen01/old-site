@@ -68,10 +68,30 @@ body {
 }
     
 
-p {
+.header2 {
     color: gray;
     text-align: center;
     font-family: Andalé-Mono, monospace;
     font-size: 200%;
-    margin-top: 1000px;
+    margin-top: 80px;
+}
+
+.header3 {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    color: gray;
+    text-align: center;
+    font-family: Andalé-Mono, monospace;
+    font-size: 200%;
+    margin-top: 800px;
+    position: relative;
+    z-index: 1;
+}
+  
+.header3.visible {
+    opacity: 1;
+}
+
+.header3 .scraper {
+    font-size: 24px;
 }

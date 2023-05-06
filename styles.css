@@ -20,15 +20,19 @@ body {
     text-decoration: none;
     width: full;
     display: flex;
-
     top: 0;
-
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
 } 
+
+.topnav.hidden {
+    opacity: 0;
+}
 
 .topnav a {
     display: inline-block;
@@ -73,7 +77,6 @@ body {
 
 .header3 {
     opacity: 1;
-    transition: opacity 0.5s ease-in-out;
     color: gray;
     text-align: center;
     font-family: Andalé-Mono, monospace;
@@ -83,10 +86,72 @@ body {
     z-index: 1;
 }
   
-.header3.visible {
-    opacity: 1;
-}
+
 
 .header3 .scraper {
     font-size: 24px;
+}
+
+.tetris {
+    opacity: 1;
+    color: gray;
+    text-align: center;
+    font-family: Andalé-Mono, monospace;
+    font-size: 200%;
+    margin-top: 200px;
+    position: relative;
+    z-index: 1;
+}
+
+.tetris .tetris2 {
+    font-size: 24px;
+}
+
+.tetris .tetris2 .tetrispic img {
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    width: 30%;
+    height: auto;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: black;
+    opacity: 1;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    position: relative;
+}
+
+.sudoku {
+    opacity: 1;
+    color: gray;
+    text-align: center;
+    font-family: Andalé-Mono, monospace;
+    font-size: 200%;
+    margin-top: 200px;
+    position: relative;
+    z-index: 1;
+}
+
+.sudoku .sudoku2 {
+    font-size: 24px;
+}
+
+.sudoku .sudoku2 .sudokupic img {
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    width: 30%;
+    height: auto;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: black;
+    opacity: 1;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    position: relative;
 }

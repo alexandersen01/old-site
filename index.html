@@ -1,26 +1,47 @@
 <!DOCTYPE html>
 
 <html>
+    <head>
+        <title>Jakob Alexander</title>
 
-<body>
+        <meta charset="UTF-8">
+        <meta name="description" content="Jakob Alexander">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="Jakob Alexander">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <style>
+
+        body {
+            background-color: black;
+        }
+        
+
         .social {
-            width: 10%;
-            margin: 10px;
+            width: 30px;
+            margin: 50px;
+            margin-top: 0px;
         }
 
         .topnav {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
             overflow: hidden;
             text-align: center;
-            margin-top: 5px;
+            margin-top: 50px;
             vertical-align: middle;
             text-decoration: none;
-            width: 100%;
+            width: full;
+            display: flex;
+
             top: 0;
-            margin-left: 4%;
+
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1;
         } 
 
         .topnav a {
@@ -32,41 +53,69 @@
             color: white;
         }
 
-        body {
-            background-image: url(120950-earth-globe-atmosphere-horizon-sunrise-blue-dark-background-hd.png);
-            background-repeat: no-repeat;
-            background-size: 100%;
-            background-attachment: scroll;
-            background-color: black;
-        }
-
-        h1 {
+        .header {
             color: gray;
             text-align: center;
             font-family: Andalé-Mono, monospace;
-            font-size: 400%;
-            margin-top: 100px;
+            font-size: 200%;
+            margin-top: 150px;
         }
+        
+        .fade-out-background {
+            background-image: url(120950-earth-globe-atmosphere-horizon-sunrise-blue-dark-background-hd.png);
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-attachment: fixed;
+            background-color: black;
+            opacity: 1;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            position: fixed;
+        }
+            
 
         p {
-            color: rgb(46, 49, 75);
+            color: gray;
             text-align: center;
-            font-family: verdana;
-            font-size: 200%
+            font-family: Andalé-Mono, monospace;
+            font-size: 200%;
+            margin-top: 1000px;
         }
+
+
+
     </style>
 
-    <div class="topnav">
+    </head>
 
 
-        <a href="snapchat"><img class="social" src="snap.png" alt="Snapchat"></a>
-        <a href="https://github.com/alexandersen01/"><img class="social" img src="github.png" alt="Twitter"></a>
-        <a href="https://www.linkedin.com/in/jakob-a-2a2302121/"><img class="social" img src="linkedin.png"
-                alt="Instagram"></a>
-    </div>
+<body>
+    <div class="fade-out-background"></div>
 
-    <h1>Landing page</h1>
-    <p>Scroll down for more</p>
+
+
+        <div class="topnav">
+            
+            
+            <a href="https://www.instagram.com/jakobalexandersen/"><img class="social" src="insta.png" alt="Instagram"></a>
+            <a href="https://github.com/alexandersen01/"><img class="social" img src="github.png" alt="Twitter"></a>
+            <a href="https://www.linkedin.com/in/jakob-a-2a2302121/"><img class="social" img src="linkedin.png"
+                alt="linkedin"></a>
+            </div>
+            
+            <div class="header">
+                <h1>Welcome to my page</h1>
+                
+            </div>
+
+    <p>
+        lorem ipsum
+    </p>
+
+</div>
+<script src="fade-background.js"></script>
 </body>
-
 </html>

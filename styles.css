@@ -155,3 +155,35 @@ body {
     left: 0;
     position: relative;
 }
+
+.button {
+    background-image: url('fullscreen.png');
+    background-size: cover;
+    z-index: 9999;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+}
+
+#exit-fullscreen-btn {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 9999;
+    opacity: 0; /* start with the button hidden */
+    transition: opacity 0.3s ease-in-out;
+    background-image: url('exitfull.png');
+}
+
+#fullscreen-button {
+    background-image: url("fullscreen.png");
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}

@@ -17,3 +17,19 @@ window.onscroll = function() {
   prevScrollpos = currentScrollPos;
 }
 
+function toggleFullscreen() {
+    if (!document.fullscreenElement) {
+      document.documentElement.requestFullscreen();
+      document.getElementById("fullscreen-button").style.backgroundImage = "url(exitfull.png)";
+    } else {
+      if (document.exitFullscreen) {
+        document.exitFullscreen();
+        document.getElementById("fullscreen-button").style.backgroundImage = "url(fullscreen.png)";
+      }
+    }
+  }
+  document.getElementById('fullscreen-btn').addEventListener('click', toggleFullscreen);
+
+
+
+

@@ -176,10 +176,14 @@ body {
     opacity: 0; /* start with the button hidden */
     transition: opacity 0.3s ease-in-out;
     background-image: url('exitfull.png');
+    background-color: transparent;
+    border: none;
 }
 
 #fullscreen-button {
+    border: none;
     background-image: url("fullscreen.png");
+    background-color: transparent;
     width: 40px;
     height: 40px;
     position: fixed;

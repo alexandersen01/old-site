@@ -18,18 +18,30 @@ window.onscroll = function() {
 }
 
 function toggleFullscreen() {
-    if (!document.fullscreenElement) {
-      document.documentElement.requestFullscreen();
-      document.getElementById("fullscreen-button").style.backgroundImage = "url(exitfull.png)";
-    } else {
-      if (document.exitFullscreen) {
-        document.exitFullscreen();
-        document.getElementById("fullscreen-button").style.backgroundImage = "url(fullscreen.png)";
-      }
+  if (!document.fullscreenElement) {
+    document.documentElement.requestFullscreen();
+    document.getElementById("fullscreen-btn").style.backgroundImage = "url(exitfull.png)";
+  } else {
+    if (document.exitFullscreen) {
+      document.exitFullscreen();
+      document.getElementById("fullscreen-btn").style.backgroundImage = "url(fullscreen.png)";
     }
   }
-  document.getElementById('fullscreen-btn').addEventListener('click', toggleFullscreen);
+}
 
+document.getElementById('fullscreen-btn').addEventListener('click', toggleFullscreen);
+
+document.addEventListener('fullscreenchange', function(event) {
+  if (!document.fullscreenElement) {
+    document.getElementById("fullscreen-btn").style.backgroundImage = "url(fullscreen.png)";
+  }
+});
+document.addEventListener('keydown', function(event) {
+  if (event.key === 'Escape' && document.fullscreenElement) {
+    document.exitFullscreen();
+    document.getElementById("fullscreen-btn").style.backgroundImage = "url(fullscreen.png)";
+  }
+});
 
 
 

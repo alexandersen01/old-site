@@ -43,5 +43,31 @@ document.addEventListener('keydown', function(event) {
   }
 });
 
+document.getElementById("scrollBtn").addEventListener("click", function() {
+  const header = document.querySelector('.header3');
+  const headerRect = header.getBoundingClientRect();
+  const headerTop = headerRect.top + window.scrollY;
+  const scrollTop = headerTop - (headerTop * 0.03); // Scroll to 10% above the header's top
+  window.scrollTo({top: scrollTop, behavior: 'smooth'});
+});
+
+document.getElementById("scrollBtn2").addEventListener("click", function() {
+  const header = document.querySelector('.tetris');
+  const headerRect = header.getBoundingClientRect();
+  const headerTop = headerRect.top + window.scrollY;
+  const scrollTop = headerTop - (headerTop * 0.01); // Scroll to 10% above the header's top
+  window.scrollTo({top: scrollTop, behavior: 'smooth'});
+});
+
+document.getElementById("scrollBtn3").addEventListener("click", function() {
+  const header = document.querySelector('.sudoku');
+  const headerRect = header.getBoundingClientRect();
+  const headerTop = headerRect.top + window.scrollY;
+  const scrollTop = headerTop - (headerTop * 0.01); // Scroll to 10% above the header's top
+  window.scrollTo({top: scrollTop, behavior: 'smooth'});
+});
+
+
+
 
 

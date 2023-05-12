@@ -75,21 +75,52 @@ body {
     margin-top: 80px;
 }
 
+.projects {
+    color: gray;
+    text-align: center;
+    font-family: Andalé-Mono, monospace;
+    font-size: 200%;
+    margin-top: 40%;
+}
+
 .header3 {
     opacity: 1;
     color: gray;
     text-align: center;
     font-family: Andalé-Mono, monospace;
     font-size: 200%;
-    margin-top: 800px;
+    margin-top: 50%;
     position: relative;
     z-index: 1;
 }
   
 
+.scroll-btns {
+    display: flex;
+    text-align: center;
+    margin-top: 40%;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.scroll-btns button {
+    font-family: Andalé-Mono, monospace;
+    font-size: 24px;
+    color: gray;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    cursor: pointer;
+    border: 2px dashed gray;
+    border-radius: 12px;
+
+}
 
 .header3 .scraper {
     font-size: 24px;
+}
+.header3.map {
+    font-size: 24px;
+    margin-top: 200px;
 }
 
 .tetris {

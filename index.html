@@ -1,108 +1,130 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <title>Jakob Alexandersen</title>
-        <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext x='0' y='80' font-size='80' font-weight='bold'%3E🚀%3C/text%3E%3C/svg%3E" type="image/svg+xml">
-        <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
-        <link rel="stylesheet" href="styles.css">
-        <meta charset="UTF-8">
-        <meta name="description" content="Jakob Alexandersen">
-        <meta name="keywords" content="HTML, CSS, JavaScript">
-        <meta name="author" content="Jakob Alexander">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
+
+<head>
+    <title>Jakob Alexandersen</title>
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext x='0' y='80' font-size='80' font-weight='bold'%3E🚀%3C/text%3E%3C/svg%3E"
+        type="image/svg+xml">
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="description" content="Jakob Alexandersen">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Jakob Alexander">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
 
 
 <body>
     <div class="fade-out-background"></div>
 
-        <div class="topnav">
-            
-            
-            <a href="https://www.instagram.com/jakobalexandersen/"><img class="social" src="insta.png" alt="Instagram"></a>
-            <a href="https://github.com/alexandersen01/"><img class="social" img src="github.png" alt="Twitter"></a>
-            <a href="https://www.linkedin.com/in/jakob-a-2a2302121/"><img class="social" img src="linkedin.png"
+    <div class="topnav">
+
+        <a href="https://www.instagram.com/jakobalexandersen/"><img class="social" src="insta.png" alt="Instagram"></a>
+        <a href="https://github.com/alexandersen01/"><img class="social" img src="github.png" alt="Twitter"></a>
+        <a href="https://www.linkedin.com/in/jakob-a-2a2302121/"><img class="social" img src="linkedin.png"
                 alt="linkedin"></a>
+    </div>
+
+    <div class="header">
+        <h1>explore my projects</h1>
+        <button class="button" id="fullscreen-btn"></button>
+
+    </div>
+
+    <div class="header2">
+        <p>ranked from least to most recent</p>
+    </div>
+
+    <div class="scroll-btns">
+
+        <button id="scrollBtn">Real Estate Webscraper</button>
+        <button id="scrollBtn2">Tetris</button>
+        <button id="scrollBtn3">Sudoku</button>
+        <button id="scrollBtn4">AI Canvas Bot</button>
+
+    </div>
+
+
+
+    <div class="header3" id="pythonscraper">
+        <p>python webscraper (MSc project)</p>
+        <div class="scraper">
+            <p>this project involves scraping an online marketplace for real estate <br>
+                and rental ads.</p>
+            <p>the goal is to create an ML that can be used to predict the price of <br>
+                a given property based on its features.</p>
+            <p>Check out my <a href="https://github.com/alexandersen01/scraper">Github</a> for more information.</p>
+            <p>Also, I used Nomatim and Folium, which in turn uses leaflet.js <br>
+                to map both the rental and real estate ads with all the <br>
+                information added. </p>
+            <p>Here is an example of one of the interactive maps I've created: </p>
+            <p>red = rental</p>
+            <p>blue = for purchase</p>
         </div>
-            
-            <div class="header">
-                <h1>explore my projects</h1>
-                <button class="button" id="fullscreen-btn"></button>
-                
+        <def class="map">
+            <iframe src="page.html" style="border: 2px solid rgb(21, 20, 20);" width="100%" height="500px"></iframe>
+        </def>
+    </div>
+
+    <div class="tetris" id="tetrisproject">
+        <p>tetris (school project): </p>
+        <div class="tetris2">
+            <p>this project involved recreating tetris in Java</p>
+            <p><a href="https://github.com/alexandersen01/Jakob.Alexandersen_sem1-tetris">Github link</a></p>
+            <p>Here is a screenshot of the game:</p>
+            <div class="tetrispic">
+                <img src="tetris.png" alt="tetris">
             </div>
+        </div>
+    </div>
 
-            <div class="header2">
-                <p>ranked from <em>'worst'</em> to best</p>
+    <div class="sudoku" id="sudokuproject">
+        <p>sudoku (school project): </p>
+        <div class="sudoku2">
+            <p>this project involved recreating sudoku in Java</p>
+            <p>The reason why I found this more challenging <br>
+                is because there was no guide available this time.<br>
+                Instead, I had to build the whole thing from scratch.<br>
+                The most interesting part though, is how I generated the<br>
+                boards. Instead of using an algorithm to build the boards,<br>
+                I downloaded a dataset containing 49,000 unsolved boards<br>
+                and used python to <a href="https://github.com/alexandersen01/man-2">make</a> them, using the sudoku
+                module.</p>
+            <p>Here is a screenshot of the game:</p>
+            <p><a href="https://github.com/alexandersen01/sem-2-jakob-alexandersen.">Github link</a>
+            <div class="sudokupic">
+                <img src="sudoku.png" alt="sudoku">
             </div>
+        </div>
 
-            <div class="scroll-btns">
-
-                <button id="scrollBtn">Real Estate Webscraper</button>
-                <button id="scrollBtn2">Tetris</button>
-                <button id="scrollBtn3">Sudoku</button>
-
-            </div>
-
-            
-
-            <div class="header3" id = "pythonscraper">
-                <p>python webscraper (MSc project)</p>
-                <div class="scraper">
-                    <p>this project involves scraping an online marketplace for real estate <br>
-                        and rental ads.</p>
-                    <p>the goal is to create an ML that can be used to predict the price of <br>
-                        a given property based on its features.</p>
-                    <p>Check out my <a href="https://github.com/alexandersen01/scraper">Github</a> for more information.</p>
-                    <p>Also, I used Nomatim and Folium, which in turn uses leaflet.js <br>
-                        to map both the rental and real estate ads with all the <br> 
-                        information added. </p>
-                    <p>Here is an example of one of the interactive maps I've created: </p>
-                    <p>red = rental</p>
-                    <p>blue = for purchase</p>
-                </div>
-                    <def class="map">
-                        <iframe src="page.html" style = "border: 2px solid rgb(21, 20, 20);" width="100%" height="500px"></iframe>
-                    </def>
-            </div>
-
-            <div class="tetris" id="tetrisproject">
-                <p>tetris (school project): </p>
-                <div class="tetris2">
-                    <p>this project involved recreating tetris in Java</p>
-                    <p><a href="https://github.com/alexandersen01/Jakob.Alexandersen_sem1-tetris">Github link</a></p>
-                    <p>Here is a screenshot of the game:</p>
-                    <div class="tetrispic">
-                        <img src="tetris.png" alt="tetris">
-                    </div>
-                </div>
-            </div>
-
-            <div class="sudoku" id="sudokuproject">
-                <p>sudoku (school project): </p>
-                <div class="sudoku2">
-                    <p>this project involved recreating sudoku in Java</p>
-                    <p>The reason why I found this more challenging <br>
-                        is because there was no guide available this time.<br>
-                        Instead, I had to build the whole thing from scratch.<br>
-                        The most interesting part though, is how I generated the<br>
-                        boards. Instead of using an algorithm to build the boards,<br>
-                        I downloaded a dataset containing 49,000 unsolved boards<br>
-                        and used python to <a href="https://github.com/alexandersen01/man-2">make</a> them, using the sudoku module.</p>
-                        <p>Here is a screenshot of the game:</p>
-                        <p><a href="https://github.com/alexandersen01/sem-2-jakob-alexandersen.">Github link</a>
-                        <div class="sudokupic">
-                            <img src="sudoku.png" alt="sudoku">
-                        </div>
-                    </div>
+        <div class="CanvasBot" id="CanvasBotproject">
+            <p>Canvas Bot</p>
+            <div class="CanvasBot2">
+                <p>this project using Canvas' API to fetch an <br>
+                    assignment and pass it on to to the OpenAI API. <br>
+                    Further on, the bot does the assignments for you.</p>
+                <p>the user inputs the assignment URL, potential extra <br>
+                    instructions and what the file should be named.</p>
+                <p>currently, the restrictions lie within what kind of <br>
+                    GPT model is being used, as the quality and length of the <br>
+                    text is based on what model is being used and how many<br>
+                    tokens it supports. </p>
+                <p>I have decided not to make the repo public, as it may <br>
+                    actually be used to commit academic fraud, because the <br>
+                    only thing needed to run it is a Canvas API and an OpenAi API key.</p>
+                <p><a href="
 
 
             
         </div>
-        <div id="exit-fullscreen-btn" src="exitfull.png" alt="Exit Fullscreen">
+        <div id=" exit-fullscreen-btn" src="exitfull.png" alt="Exit Fullscreen">
 
 
-<script src="fade-background.js"></script>
+                        <script src="fade-background.js"></script>
 </body>
+
 </html>

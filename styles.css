@@ -28,7 +28,7 @@ body {
     z-index: 1;
     transition: opacity 0.5s ease-in-out;
     opacity: 1;
-} 
+}
 
 .topnav.hidden {
     opacity: 0;
@@ -51,6 +51,8 @@ body {
     margin-top: 150px;
 }
 
+
+
 .fade-out-background {
     background-image: url(120950-earth-globe-atmosphere-horizon-sunrise-blue-dark-background-hd.png);
     background-repeat: no-repeat;
@@ -65,7 +67,8 @@ body {
     left: 0;
     position: fixed;
 }
-    
+
+
 
 .header2 {
     color: gray;
@@ -93,7 +96,7 @@ body {
     position: relative;
     z-index: 1;
 }
-  
+
 
 .scroll-btns {
     display: flex;
@@ -118,6 +121,7 @@ body {
 .header3 .scraper {
     font-size: 24px;
 }
+
 .header3.map {
     font-size: 24px;
     margin-top: 200px;
@@ -187,6 +191,10 @@ body {
     position: relative;
 }
 
+.CanvasBot .CanvasBot2 {
+    font-size: 24px;
+}
+
 .button {
     background-image: url('fullscreen.png');
     background-size: cover;
@@ -204,7 +212,8 @@ body {
     bottom: 0;
     right: 0;
     z-index: 9999;
-    opacity: 0; /* start with the button hidden */
+    opacity: 0;
+    /* start with the button hidden */
     transition: opacity 0.3s ease-in-out;
     background-image: url('exitfull.png');
     background-color: transparent;

@@ -2,7 +2,10 @@ const fadeOutBackground = document.querySelector('.fade-out-background');
 
 window.addEventListener('scroll', () => {
   const scrollPosition = window.pageYOffset;
-  const opacity = 1 - (scrollPosition / 500); // change 500 to adjust the fade-out speed
+  let opacity = 1 - (scrollPosition / 500); // change 500 to adjust the fade-out speed
+  if (opacity <= 0.2) {
+    opacity = 0.2;
+  }
   fadeOutBackground.style.opacity = opacity;
 });
 

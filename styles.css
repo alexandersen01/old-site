@@ -151,7 +151,7 @@ body {
     height: auto;
     background-size: cover;
     background-attachment: fixed;
-    background-color: black;
+    background-color: transparent;
     opacity: 1;
     z-index: -1;
     top: 0;
@@ -183,7 +183,7 @@ body {
     height: auto;
     background-size: cover;
     background-attachment: fixed;
-    background-color: black;
+    background-color: transparent;
     opacity: 1;
     z-index: -1;
     top: 0;
@@ -205,6 +205,37 @@ body {
     width: 50px;
     height: 50px;
     background-color: black;
+}
+
+.balls {
+    opacity: 1;
+    color: gray;
+    text-align: center;
+    font-family: Andalé-Mono, monospace;
+    margin-top: 200px;
+    position: relative;
+    z-index: 1;
+}
+
+.balls .balls2 {
+    font-size: 24px;
+}
+
+.balls .balls2 .ballspic img {
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    width: 30%;
+    height: auto;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: transparent;
+    opacity: 1;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    position: relative;
 }
 
 #exit-fullscreen-btn {

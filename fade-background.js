@@ -8,8 +8,8 @@ window.addEventListener('scroll', () => {
   }
   fadeOutBackground.style.opacity = opacity;
 });
-
 var prevScrollpos = window.pageYOffset;
+
 window.onscroll = function () {
   var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
@@ -77,3 +77,4 @@ document.getElementById("scrollBtn4").addEventListener("click", function () {
   const scrollTop = headerTop - (headerTop * 0.01); // Scroll to 10% above the header's top
   window.scrollTo({ top: scrollTop, behavior: 'smooth' });
 });
+

@@ -85,3 +85,11 @@ document.getElementById("scrollBtn5").addEventListener("click", function () {
   const scrollTop = headerTop - (headerTop * 0.01); // Scroll to 10% above the header's top
   window.scrollTo({ top: scrollTop, behavior: 'smooth' });
 });
+
+document.getElementById("scrollBtn6").addEventListener("click", function () {
+  const header = document.querySelector('.numbers');
+  const headerRect = header.getBoundingClientRect();
+  const headerTop = headerRect.top + window.scrollY;
+  const scrollTop = headerTop - (headerTop * 0.01); // Scroll to 10% above the header's top
+  window.scrollTo({ top: scrollTop, behavior: 'smooth' });
+});
